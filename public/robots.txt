@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://crypto-proof.vercel.app/sitemap.xml
