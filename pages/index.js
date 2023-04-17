@@ -17,7 +17,7 @@ export default function Home() {
     const [isComplete] = useTimeout(5000);
 
     useEffect(() => {
-        console.info('Cryptographic Proof of NFT Endorsement', "color: rgba(14, 165, 233, 1); font-size: 24px;");
+        console.info('Running Crypto Proof');
     }, []);
 
     function oauthSignOut() {

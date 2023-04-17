@@ -30,7 +30,12 @@ export default function Layout(props) {
         `}
             </Script>
             <div className="flex text-3xl font-bold text-sky-500 mt-14 mb-4 2xl:text-4xl">
-               &nbsp;Crypto Proof
+               <Image
+                    src="/buzz-on-moon.jpeg"
+                    alt="Picture of the author"
+                    width={50}
+                    height={50}
+                />  &nbsp;Crypto Proof
             </div>
                 <div className="text-4xl text-slate-900 font-medium py-4 text-center 2xl:text-6xl dark:text-white">
                     Cryptographic Proof of NFT Endorsement
