@@ -6,6 +6,7 @@ import {UserGroupIcon} from "@heroicons/react/solid";
 import ToggleButton from "../components/Toggle";
 import AnimatePing from "../components/animatePing";
 import HtmlToImage from "../components/HtmltoImage";
+import ProfileImage from "../public/profile-pic.png";
 import Tilt from "vanilla-tilt";
 import formatNumber from "../lib/NumberFormater";
 
@@ -42,7 +43,14 @@ export default function Followers({session}) {
     const userData = data.data;
     return (
         <figure className="md:flex bg-white rounded-xl p-8 md:p-0 shadow-xl twitter-card dark:bg-gray-800" ref={ref}>
-
+            <Image
+                src={session.user.image ? session.user.image : ProfileImage}
+                alt="Picture of the author"
+                className="rounded-tl-lg rounded-bl-lg mx-auto"
+                width={300}
+                height={300}
+                priority={true}
+            />
             {isAutoRefresh && <AnimatePing/>}
             <div className="pt-6 md:p-4 text-center md:text-left space-y-4 md:w-3/4">
                 <div className="flex 2xl:pb-5 flex-col md:flex-row">
